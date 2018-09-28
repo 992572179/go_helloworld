@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	num := 11
+	num := 12
 
 	if num%2 == 0 {
 		fmt.Print("num 是偶数。")
