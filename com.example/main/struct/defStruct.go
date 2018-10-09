@@ -10,7 +10,7 @@ type Student struct {
 	name, address string
 }
 
-//声明一个匿名结构体
+//声明一个匿名结构体，使用var关键字，而不是type
 var Department struct {
 	deptName, manageBy string
 }
@@ -28,4 +28,10 @@ func main() {
 
 	fmt.Println(stu1)
 	fmt.Println(stu2)
+	fmt.Println(stu2.address)
+
+	var stu3 Student
+	stu3.id = 1003
+	stu3.name = "tokyo"
+	fmt.Println("stu3:", stu3)
 }
